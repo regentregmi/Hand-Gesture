@@ -26,6 +26,7 @@ def detect_gesture(hand_landmarks):
             fingers.append(0)
 
     # Check thumb (horizontal movement)
+    
     if hand_landmarks.landmark[thumb_tip].x < hand_landmarks.landmark[thumb_tip - 2].x:
         fingers.append(1)
     else:
