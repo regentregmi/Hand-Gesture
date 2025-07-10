@@ -10,6 +10,7 @@ mp_drawing = mp.solutions.drawing_utils
 hands = mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.7)
 
 # Gesture detection function
+
 def detect_gesture(hand_landmarks):
     finger_tips = [8, 12, 16, 20]
     thumb_tip = 4
