@@ -18,6 +18,7 @@ def detect_gesture(hand_landmarks):
     fingers = []
 
     # Check if fingers are open
+    
     for tip in finger_tips:
         if hand_landmarks.landmark[tip].y < hand_landmarks.landmark[tip - 2].y:
             fingers.append(1)
